@@ -1,0 +1,12 @@
+.content .banner{ padding: .1rem 0rem; box-sizing:border-box; border-bottom: 1px solid #f4f4f4;}
+.content .banner>img{ width: 100%;}
+.content ul{padding: .2rem; box-sizing:border-box;}
+.content ul>li{
+    position: relative;
+    height: .6rem;
+    line-height:.6rem;
+
+}
+.content ul>li>a{
+    display: block;
+}

@@ -1,0 +1,117 @@
+.content .hd>ul>li{
+	position: relative;
+	padding-left: 1.4rem;
+	padding-right: 1rem;
+	min-height: .8rem;
+	border-bottom: 1px solid #f4f4f4;
+	line-height: .8rem;
+}
+.content .hd>ul>li>span{
+	position: absolute;
+	left: .2rem;
+	top: 0;
+}
+.content .hd>ul>li>cite{
+	position: absolute;
+	right: .2rem;
+	top: 0;
+}
+.content .hd>ul>li>input,.content .hd>ul>li>textarea{
+	border: 0; 
+	width: 100%;
+
+}
+.content .hd>ul>li:last-child{
+	border-bottom: 0;
+}
+.content .bd{
+	padding: 0 .3rem;
+	box-sizing:border-box;
+}
+.content .bd>input{
+	height: .6rem;
+	line-height: .6rem;
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #f4f4f4;
+}
+.content .bd>textarea{
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #f4f4f4;
+	line-height: .4rem;
+	padding: .1rem 0;
+	font-size: .24rem;
+	min-height: 3rem;
+}
+.content .btn{
+	width: 100%;
+	text-align: center;
+	padding-bottom: .5rem;
+}
+.content .btn>button{
+	width: 3rem;
+	height: .6rem;
+	line-height: .6rem;
+	border-radius: .3rem;
+	text-align: center;
+	border: 0;
+	font-size: .28rem;
+	margin-top: .6rem;
+}
+.content .btn>p{
+	font-size: .2rem;
+	margin-top: .2rem;
+}
+.content .info{
+	padding: .05rem 0;
+	box-sizing:border-box;
+}
+.content .info>p{
+	height: .45rem;
+	line-height: .45rem;
+	text-indent: .2rem;
+	border-left: 3px solid #fe7927;
+}
+.content .jiuzu{ 
+	height: .7rem;
+	line-height: .7rem;
+	padding: 0 .2rem;
+	color: #666;
+}
+.zhengshi{
+background-color: transparent;
+border:0;
+width: 100%;}
+
+.theme-popover-mask{
+	display: none;
+}
+.boxin1{
+	display: none;
+width: 100%;
+min-width: 320px;
+max-width: 640px;
+	
+	background-color: #fff;
+	z-index: 9;
+	position: fixed;
+	bottom:0;
+	padding: .2rem;
+	box-sizing:border-box;
+}
+.boxin1>h6{ height: .6rem; line-height: .6rem;text-align: center;}
+.boxin1>p{ font-size:.2rem; line-height: .4rem;text-align: center;}
+.boxin1 .btn{
+	text-align: center;
+}
+.boxin1 .btn>button{
+	border:1px solid #f4f4f4;
+	color: #fe7927;
+	background-color: #FDFBFB;
+	width: 6rem;
+	height: .5rem;
+	line-height: .5rem;
+	margin-top: .2rem;
+}
+

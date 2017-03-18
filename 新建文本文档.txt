@@ -1,0 +1,36 @@
+首页   index
+发起项目    allProjects
+发起项目-列表    initiatesProjects
+查看支持记录    viewLog
+用户设置	userSet
+手术费-证实     operationFeeVerify
+手术费-已获     operationFeePrepare
+证实项目的流程   operationFeeProcedure
+发起项目-完成    ProjectsComplete
+登录电话验证  loginVerification
+意见反馈    feedback
+支持详情    supportDetails
+我的 mine
+个人设置-实名认证   set
+登录   login
+项目审核  projectAudit
+发起项目进度2－－ 项目证实 	projectsschedule
+项目审核进度1	 projectAuditSchedule
+               
+新添
+
+Projects 项目证实
+help帮助
+动态 一同筹  dongtai.html
+项目审核 projectAudit.html
+项目审核 （医院部分）projectAuditcard.html
+ 项目详情页 无提示框 operationFeeProcedure_none.html
+ 项目详情页 有提示框 operationFeeProcedure.html
+编辑项目editor.html
+更新动态 renew.html
+删除项目 operationFeePrepare（项目管理）_delete.html
+已经删除  delete.html
+举报  report.html
+举报成功 reportSuccess.html
+修改时间 mtime.html
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－项目验证</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/projectAudit.css" rel="stylesheet">
+    <link href="css/photos.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">项目验证</span>
+</header>
+<div class="content">
+    <div class="con-hd bg-white">
+        <input id="certificationsId" type="hidden"/>
+        <input id="projectBankcardId" type="hidden"/>
+        <input id="mobileId" type="hidden"/>
+        <h5 class="bg-white">收款人信息</h5>
+        <input type="hidden" id="checkStatus"/>
+        <ul>
+            <li>
+                <span>真实姓名</span>
+                <input type="text" placeholder="填写发起人真实姓名" id="realName"/>
+            </li>
+            <li>
+                <span>身份证号</span>
+                <input type="text" placeholder="填写收款人身份证号码" id="idCardNumber"/>
+            </li>
+            <li>
+                <span>联系电话</span>
+                <input type="text" placeholder="填写收款人联系电话" id="mobileNumber"/>
+            </li>
+        </ul>
+        <div class="m-top10" id="idsDiv">
+            <p class="">收款人手持身份证照片</p>
+            <div id="addIdDiv" class="photoDiv">
+                <a href="javascript:;" id="chooseIdImg">
+                    <img src="img/pic-8.png" id="choosedIdImg"/>
+                </a>
+            </div>
+            <p class="color-gray9" style="font-size:.2rem;">身份证上的所有信息必须清晰可见，必须能看清身份证号</p>
+        </div>
+    </div>
+    <div class="card bg-white" id="banks">
+        <h5>收款人银行卡</h5>
+        <input id="proveBank" type="hidden"/>
+        <div style="position: relative;" id="personalBank"><i class="iconfont color-orange2">&#xe611;</i>添加银行卡
+            <a class=" more h5" href="javascript:;">&#xe60a;</a>
+        </div>
+    </div>
+
+    <div class="purpose">
+        <h5>资金用途证明</h5>
+        <div class="bg-white">
+            <div id="useProveImg">
+                <div id="addUseDiv" class="photoDiv">
+                    <a href="javascript:;" id="chooseUseImg">
+                        <img src="img/pic-8.png" id="choosedUseImg"/>
+                    </a>
+                </div>
+            </div>
+            <p class="m-top20 color-gray9">提供正规证明图片</p>
+        </div>
+    </div>
+
+    <div class="btn">
+        <button class="color-white bg-orange2" id="btnSelected">确定</button>
+    </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxJSSDK.js"></script>
+<script type="text/javascript" src="js/wxSDK/imageApi.js"></script>
+<script type="text/javascript" src="js/logic/photoUpAndDownload.js"></script>
+<script type="text/javascript" src="js/logic/projectProvePersonalModify.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#addpto").click(function () {
+            $(".theme-popover-mask").show();
+            $(".boxin1").show();
+        })
+        $(".boxin1>div>button").click(function () {
+            $(".theme-popover-mask").hide();
+            $(".boxin1").hide();
+        })
+    })
+</script>

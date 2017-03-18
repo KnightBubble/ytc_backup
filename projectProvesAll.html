@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－证实项目列表</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet"/>
+    <link href="css/projectDetail.css" rel="stylesheet"/>
+    <link href="css/Procedure.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">一同筹</span>
+</header>
+<div class="content">
+    <div class="con-hd">
+        <div class="tit">
+            <div class="pic">
+                <img id="portraitImgUrl" src="img/home_listtu.jpg"/>
+            </div>
+            <h5><span id="title">健康饮茶为健康出款</span></h5>
+            <p class="color-orange2" id="projectStatus">已成功</p>
+        </div>
+    </div>
+    <div class="prove m-top20 bg-white">
+        <h6>有<cite class="color-orange2" id="provesCnt">20</cite>人实名认证</h6>
+        <ul id="provesDetail">
+        </ul>
+        <a id="downPage_proves" href="javascript:void(0);" class="iconfont color-orange2 center"
+           style="transform: rotate(90deg);">&#xe60a;</a>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/logic/projectProves.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".prove>ul>li").hide();
+        var i = 0;
+        for (i = 0; i < 3; i++) {
+            $(".prove>ul>li").eq(i).show();
+        }
+        $(".prove>a").click(function () {
+            $(".prove>ul>li").show();
+        })
+    })
+</script>

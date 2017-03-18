@@ -1,0 +1,35 @@
+.photoDiv{
+    width: 2rem;
+    height: 2rem;
+    min-height: 2.2rem;
+    margin-right: .1rem;
+    display: inline-block;
+    position: relative;
+}
+.photoDiv>span{
+    display: block;
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.photoDiv>i{
+    position: absolute;
+    right: .1rem;
+    top: .1rem;
+    width: .25rem;
+    height: .25rem;
+    text-align: center;
+    line-height: .25rem;
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+}
+.photoDiv>img{
+    width:100%;
+    height: 100%;
+}

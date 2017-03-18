@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>【一同筹】</title>
+    <meta name="description" content="d">
+    <meta name="keywords" content="k">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/projectDetail.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">一同筹</span>
+    <div class="nav-wrap-right" id="reportDiv" style="display:block;">
+        <a href="javascript:void(0);" id="report">
+            <i class="color-white">举报</i>
+        </a>
+    </div>
+    <div class="nav-wrap-right" id="manageDiv" style="display: block;">
+        <a href="javascript:;">
+            <i class="color-white" id="manage">项目管理</i>
+        </a>
+    </div>
+</header>
+<div class="content">
+    <div class="con-hd" id="baseInfo">
+        <div class="tit">
+            <input id="projectStatus" type="hidden" value="4"/>
+            <input id="projectStatusName" type="hidden" value="筹款中"/>
+            <input id="collectEndTs" type="hidden"/>
+            <div class="pic">
+                <img src="img/home_listtu.jpg" id="portraitImgUrl"/>
+            </div>
+            <span class="h5" id="nickname"></span> <cite class="color-gray9"><span id="releasePre">*</span>天前</cite>
+            <em class="color-gray9">剩余<i class="color-orange2" id="releaseSuf">*</i>天</em>
+            <h3 class="h4"><span id="title"></span></h3>
+        </div>
+        <ul class="clearfix">
+            <li>
+                <a href="javascript:;">
+                    <span class="color-orange2" id="collectGoalAmount">0元</span>
+                    <p class="color-gray9">目标金额</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="color-orange2" id="raiseAmount">0.00元</span>
+                    <p class="color-gray9">已筹金额</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="color-orange2" id="supportCnt">0.00元</span>
+                    <p class="color-gray9">支持次数</p>
+                </a>
+            </li>
+        </ul>
+        <div class="hid">
+            <p id="detailInformation">
+            </p>
+            <ol id="imagesOl">
+            </ol>
+        </div>
+    </div>
+
+    <div class="con-bd m-top20 bg-white">
+        <h6 class="color-orange2">项目证明资料</h6>
+        <div class="hed">
+            <h6 class="h5" id="nsub">筹款人：未提交</h6>
+            <p id="noSub">
+            </p>
+            <h6 class="h5" id="asub">筹款人：已提交</h6>
+            <p id="alreadySub">
+            </p>
+        </div>
+    </div>
+    <div class="verify m-top20 bg-white color-orange2" id="provesNul">
+        <div class="pic" style="width:0.3rem; float:left">
+            <img src="img/logo.jpg"/>
+        </div>
+        为筹款项目证实
+        <button class="border-orange2 color-orange2 h6" id="provesTAN">为TA证实</button>
+    </div>
+
+    <div class="prove m-top20 bg-white" id="provesPage" style="display: none;">
+        <h6>有<span id="provesCnt"> </span>位爱心人士证明<cite class="color-orange2 right" id="provesTA">为TA证实</cite></h6>
+        <a href="javascript:void(0);" class="more" id="provesLst">
+            <ol id="proves">
+            </ol>
+        </a>
+        <ul id="provesDetail">
+        </ul>
+    </div>
+    <div class="dynamic m-top20 bg-white " id="progress">
+        <h4>众筹动态<em class="color-orange2" id="progressCnt">2</em></h4>
+    </div>
+    <div class="dynamic m-top30 bg-white " id="subscribes">
+        <h4>TA的支持者<em class="color-orange2" id="subscribeCnt">23018</em></h4>
+        <div id="testSub">
+        </div>
+    </div>
+</div>
+
+
+<div class="theme-popover-mask" style="display:none;"></div>
+<div class="boxin" id="replyDiv">
+    <h6>发表评论</h6>
+    <textarea placeholder="我也说一句" id="contentReply"></textarea>
+    <input id="progId" type="hidden" value=""/>
+    <ul>
+        <li>
+            <a href="javascript:;" id="cancelReply">取消</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="color-orange2" id="reply">回复</a>
+        </li>
+    </ul>
+</div>
+
+<div class="fenxian bg-white">
+    <h3>分享给好友</h3>
+    <div>
+        <a href="javascript:;" id="sendAppMessage">
+            <i><img src="img/pengyou1.png"/></i>
+            <p class="m-top10">微信好友</p>
+        </a>
+        <a href="javascript:;" id="shareTimeline">
+            <i><img src="img/pengyou_q.png"/></i>
+            <p class="m-top10">朋友圈</p>
+        </a>
+    </div>
+    <button class="color-orange2 bg-gray m-top30">确定</button>
+</div>
+
+<div class="boxin" id="advanceReasonDiv">
+    <h6>提前结束</h6>
+    <textarea placeholder="提前结束原因" id="advanceReason"></textarea>
+    <ul>
+        <li>
+            <a href="javascript:;" id="cancelAdvance">取消</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="color-orange2" id="advance">确定</a>
+        </li>
+    </ul>
+</div>
+<div class="boxin" id="delProjectDiv">
+    <h6 class="color-orange2"> 项目删除确认</h6>
+    <p> 项目删除后将无法恢复，已筹金额会全部退还给支持者，<br>您确定要删除吗？</p>
+    <ul>
+        <li>
+            <a href="javascript:;" id="cancelDel">取消</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="color-orange2" id="delProject">确定</a>
+        </li>
+    </ul>
+</div>
+
+<div class="footer">
+    <div class="l" id="collect">
+        <i class="iconfont color-orange2" id="collectP">&#xe60d;</i>
+        <input type="hidden" id="isCollect" value="UN_COLLECT"/>
+        <p class="color-gray6">关注<cite class="color-orange2" id="collectCnt">143</cite></p>
+    </div>
+    <button class="bg-blue" id="subscribe">帮助TA</button>
+    <div class="r" id="share">
+        <i class="iconfont color-gray6">&#xe616;</i>
+        <p class="color-gray6" id="fenxian">分享<cite class="color-orange2">43</cite></p>
+    </div>
+</div>
+
+<!-- 以下是项目管理弹出层和删除项目弹出层-->
+<!--<div class="theme-popover-mask" style="display: none;"></div>-->
+<div class="manage">
+    <h5 class="center">项目管理</h5>
+    <ul>
+        <li>
+            <a href="javascript:void(0);" id="subscribeLst">
+                <i class="iconfont">&#xe618;</i>
+                <p>支持记录</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" id="editProject">
+                <i class="iconfont">&#xe614;</i>
+                <p>编辑项目</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" id="modifyAmount">
+                <i class="iconfont">&#xe61d;</i>
+                <p>修改金额</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" id="modifyEndCollectTm">
+                <i class="iconfont">&#xe605;</i>
+                <p>修改时间</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" id="releaseProgress">
+                <i class="iconfont">&#xe613;</i>
+                <p>更新动态</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" id="projectProve">
+                <i class="iconfont">&#xe61a;</i>
+                <p>项目验证</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" id="connectService">
+                <i class="iconfont">&#xe61e;</i>
+                <p>联系客服</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" id="advanceFinish">
+                <i class="iconfont">&#xe615;</i>
+                <p>提前结束</p>
+            </a>
+        </li>
+        <li>
+            <a href="JavaScript:void(0);" id="deleteProject">
+                <i class="iconfont">&#xe610;</i>
+                <p>删除项目</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" id="useHelp">
+                <i class="iconfont">&#xe60f;</i>
+                <p>使用帮助</p>
+            </a>
+        </li>
+    </ul>
+    <button>取消</button>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxJSSDK.js"></script>
+<script type="text/javascript" src="js/logic/projectDetail.js"></script>
+<script type="text/javascript" src="js/logic/projectManage.js"></script>
+<script type="text/javascript" src="js/logic/wxShare.js"></script>
+</body>
+</html>

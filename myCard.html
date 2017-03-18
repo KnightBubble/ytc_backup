@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－银行卡</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/myCard.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">我的银行卡</span>
+</header>
+<div class="content">
+    <!--<ul>
+        <li>
+            <a href="javascript:;" class="color-orange2">个人银行卡</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="color-orange2">对公银行卡</a>
+        </li>
+    </ul>-->
+    <div class="color-gray9">帮卡须知：平台只支持储蓄体现，请勿绑定信用卡，存折等以免影响提现。</div>
+    <div class="bg-gray" style="height:.2rem;"></div>
+    <ol>
+        <li>
+            <span>开户银行：</span>
+            <select id="bank">
+                <option value="0001">中国银行</option>
+                <option value="0002">中国工商银行</option>
+                <option value="0003">中国建设银行</option>
+                <option value="0004">中国农业银行</option>
+                <option value="0005">招商银行</option>
+            </select>
+        </li>
+        <li>
+            <span>开户姓名：</span>
+            <input id="cardPersonName" type="text" placeholder="填写开户人姓名"/>
+        </li>
+        <li>
+            <span>银行卡号：</span>
+            <input id="cardNo" type="text" placeholder="填写银行卡号"/>
+        </li>
+    </ol>
+</div>
+<div class="btn m-top50">
+    <button class="color-white bg-orange2" id="addCardBtn">确定</button>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/logic/myCard.js"></script>

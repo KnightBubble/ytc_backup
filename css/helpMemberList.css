@@ -1,0 +1,13 @@
+body,html{ background-color: #f4f4f4;}
+.content .hd{ padding: .4rem 0;}
+.content .hd>ul>li{ width: 50%; float: left; text-align: center;}
+.content .hd>ul>li:last-child{ border-left: 1px solid #ddd; box-sizing:border-box;}
+.content .hd>ul>li>span{font-size: .26rem;}
+.content .hd>ul>li>p{ margin-top: .1rem;}
+.box{ padding: .2rem; box-sizing:border-box; border-bottom: 1px solid #ddd;}
+.box .boxin{ position: relative; padding-left: 1.4rem; min-height: 1rem;}
+.box>p{ line-height: .45rem;}
+.box .boxin .pic{ position: absolute;left: 0; top: 0; width: 1.2rem; height: 1rem;}
+.box .boxin .pic>img{width: 100%; height: 100%;}
+.box>ul>li{ height: .4rem; line-height: .4rem;}
+.box:last-child{border-bottom: 0;}

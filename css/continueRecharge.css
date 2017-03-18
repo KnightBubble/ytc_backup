@@ -1,0 +1,16 @@
+.content .con-hd{ padding:.25rem .2rem; background-color: #fff;box-sizing:border-box; border-bottom: 1px solid #e5e5e5;}
+.content .con-hd>h4{ line-height: .5rem;}
+.content .con-hd>p{ line-height: .4rem; font-size: .22rem;}
+.content .con-list>button{ width: 80%; margin: .5rem auto; margin-top: .7rem; border-radius: .3rem; font-size: .26rem; border:0; display: block; height: .6rem; line-height: .6rem;}
+.content .con-bd{ padding:.25rem .2rem;box-sizing:border-box; }
+.content .con-bd>h4{ line-height: .5rem;}
+.content .con-bd>p{ line-height: .4rem; font-size: .22rem;}
+.content .con-bd .box{padding: 0 .15rem; box-sizing: border-box;}
+.content .con-bd .box ul{margin-top: .4rem; padding-bottom: .3rem;}
+.content .con-bd .box ul>li{ width: 33.33%; float: left; height: .5rem;  line-height:.5rem; text-align: center;}
+.content .con-bd .box ul>li>a{display: block; cursor:pointer; width: 1.2rem; margin: 0 auto; background-color: #f4f4f4; color: #333;}
+.content .con-bd .box>div{ padding: 0 .3rem; box-sizing: border-box;}
+.content .con-bd .box>div>input{ width: 3.8rem; margin-right: .2rem; border: 1px solid #e5e5e5; background-color: #f4f4f4; text-indent: .2rem; height: .45rem; line-height: .45rem;}
+.content .con-bd .box ul>li.cur>a{ background-color: #fe7927; color: #fff;}
+
+

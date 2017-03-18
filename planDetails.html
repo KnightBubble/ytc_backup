@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－计划详情</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/planDetails.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">计划详情</span>
+</header>
+<div class="content">
+    <div class="bg-white">
+        <img src="img/datilBanner.jpg"/>
+    </div>
+    <div class="hd bg-white">
+        <input type="hidden" id="preDeposit" value="9"/>
+        <input type="hidden" id="planName" value=""/>
+        <ul class="clearfix">
+            <li>
+                <span class="color-orange2" id="memberCnt">0</span>
+                <p>加入会员数（人）</p>
+            </li>
+            <li>
+                <span class="color-orange2" id="totalAmount">0</span>
+                <p>互助计划总金额</p>
+            </li>
+        </ul>
+    </div>
+    <div class="con m-top20 bg-white">
+        <h5 class="color-orange2">了解互助</h5>
+        <p>我国每年270万人因癌症去世</p>
+        <p>每年有9000个家庭因癌致贫</p>
+        <img src="img/planDetails-tu.jpg"/>
+        <p>预存9元加入互助，帮助他人，保障自己，让爱共享</p>
+        <p>有会员需要帮助时，大家共同帮助，每人分摊不超3元</p>
+        <img src="img/planDetails-xin.jpg"/>
+    </div>
+    <div class="rule bg-white m-top20">
+        <h5 class="color-orange2">互助规则</h5>
+        <ul id="rules"></ul>
+    </div>
+    <!-- 安全保障 -->
+    <div class="anger m-top20 bg-white">
+        <h5 class="color-orange2">安全保障</h5>
+        <ul>
+            <li>
+                    <span>
+                        <img src="img/ico1.png"/>
+                    </span>
+                安全可靠，顶尖风投投资
+            </li>
+            <li>
+                    <span>
+                        <img src="img/ico2.png"/>
+                    </span>
+                中国山花工程慈善基金会托管资金
+            </li>
+            <li>
+                    <span>
+                        <img src="img/ico3.png"/>
+                    </span>
+                权威第三方机构核实互助案件
+            </li>
+        </ul>
+    </div>
+    <!-- 常见问题 -->
+    <div class="wenti bg-white m-top20">
+        <h5 class="color-orange2">常见问题</h5>
+        <ul>
+            <li>
+                <a href="javascript:;">
+                    Q1&nbsp;什么是互助保障？
+                    <cite class="right iconfont">&#xe62a;</cite>
+                </a>
+                <div class="boxin">
+                    <span></span>
+                    <p>互助保障是一种全新的健康保障机制，加入的互助者只需要支付10元费用后经过180天的观察期后即可获得高额的监控安全保障。互助保障不是保险，而是会员之间互帮互助的公益行动。加入互助，一人患病，众人分摊，大家互帮互助。</p>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    Q2&nbsp;已有商业医疗保险，还需要加入吗？
+                    <cite class="right iconfont">&#xe62a;</cite>
+                </a>
+                <div class="boxin">
+                    <span></span>
+                    <p>还是需要的。患病后，治疗费用18-30万元。加入互助，医保和商业保险之外，又多了一份保障。互助计划不是保险，与已有的医疗保险并不冲突。</p>
+                    <!--<ol>
+                        <li>三者相同点和不同点如下：</li>
+                    </ol>-->
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    Q3&nbsp;若遇不幸怎么申请互助？
+                    <cite class="right iconfont">&#xe62a;</cite>
+                </a>
+                <div class="boxin">
+                    <span></span>
+                    <p>如果患病了，可按照以下流程申请互助：</p>
+                    <ol>
+                        <li>（1）拨打客服电话400-686-1179发起申请；</li>
+                        <li>（2）第三方专业公估机构核实后，全平台公示；</li>
+                        <li>（3）公示通过无异议，从互助金中划款。</li>
+                        <li>以已加入的计划为凭证。</li>
+                    </ol>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 会员共约 -->
+    <!--<div class="yue m-top20 bg-white">
+        <h5 class="color-orange2">常见问题</h5>
+        <p class="m-top10">《人人公益互助计划条款》</p>
+    </div>-->
+</div>
+<div class="footer">
+    <button class="color-white bg-orange2" id="launch">加入互助，共享保障</button>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxLogin.js"></script>
+<script type="text/javascript" src="js/logic/planDetails.js"></script>
+</body>
+</html>

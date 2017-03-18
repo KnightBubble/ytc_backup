@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－项目验证</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/projectAudit.css" rel="stylesheet">
+    <link href="css/photos.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">项目验证</span>
+</header>
+<div class="content">
+    <div class="bd">
+        <a href="javascript:;" class="h6">
+            所在医院<input type="text" id="hospitalName" placeholder="请输入医院名称"/>
+        </a>
+        <h6>医疗诊断资料</h6>
+        <!--<div>-->
+        <!--<img src="img/pic-8.png"/>-->
+        <!--</div>-->
+        <div class="bg-white">
+            <div id="diagnosisImg">
+                <!--<div  class="photoDiv">
+                    <img src="img/home_listtu.jpg" />
+                    <span></span>
+                    <i>x</i>
+                </div>-->
+                <div id="addDiagnosisDiv" class="photoDiv">
+                    <a href="javascript:;" id="chooseDiagnosisImg">
+                        <img src="img/pic-8.png" id="choosedDiagnosisImg"/>
+                    </a>
+                </div>
+            </div>
+            <p class="m-top20 color-gray9">提供正规证明图片<br>
+                《诊断证明书》《住院病案首页》《出院小结》<br>
+                至少提供一种
+            </p>
+        </div>
+    </div>
+    <div class="btn m-top50">
+        <button class="color-white bg-orange2" id="proveNextAuditBtn">确定</button>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxJSSDK.js"></script>
+<script type="text/javascript" src="js/wxSDK/imageApi.js"></script>
+<script type="text/javascript" src="js/logic/photoUpAndDownload.js"></script>
+<script type="text/javascript" src="js/logic/projectProveNextAudit.js"></script>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－首页</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/common/swiper.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要导航按钮 -->
+            <!--<div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </header>
+    <div class="page-list">
+    </div>
+    <footer>
+        <ul>
+            <li class="cur">
+                <a href="#" id="index">
+                    <i class="iconfont">&#xe608;</i>
+                    <p>公益</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="dongtai">
+                    <i class="iconfont">&#xe607;</i>
+                    <p>动态</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="plan">
+                    <i class="iconfont">&#xe625;</i>
+                    <p>互助</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="project">
+                    <i class="iconfont">&#xe600;</i>
+                    <p>发起</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="mine">
+                    <i class="iconfont">&#xe602;</i>
+                    <p>我</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/common/swiper.min.js"></script>
+    <script type="text/javascript" src="js/common/artTpl.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/getUrlParam.js"></script>
+    <script type="text/javascript" src="js/logic/index.js"></script>
+    <script id="recommend-list" type="text/html">
+        {{each pageData as value i}}
+            <div class='list' data-project-id = "{{value.projectId}}">
+                <p class='title'>{{value.title}}<span class='releasePre'>{{value.releasePre}}天前</span></p>
+                <p class='detailInformation'>{{value.detailInformation}}</p>
+                <div class='img-box'>
+                    {{each value.images.split(',') as img j}}
+                        <img src="{{img}}" alt="" class='pro-imgs'>
+                    {{/each}}
+                </div>
+                {{if value.supportCnt > 0}}
+                <div class='pro-support'>
+                    <div class='suppor-logo-box'>
+                        {{each value.subscribeHeaders as img i}}
+                        <img src="{{img}}" alt="" class='support-logo'>
+                        {{/each}}
+                    </div>
+                    <span class='support-num'>已有<em>{{value.supportCnt}}</em>人支持</span>
+                </div>
+                {{/if}}
+                <div>
+                    <div class='process-box'>
+                        <div class='real-process' style="width:{{(100*value.raiseAmount/value.collectGoalAmount).toFixed(2)}}%"></div>
+                    </div>
+                    <span class='tips-process'>{{(100*value.raiseAmount/value.collectGoalAmount).toFixed(2)}}%</span>
+                </div>
+                <div class='details'>
+                    <span>目标<em>{{value.collectGoalAmount/1000}}</em>元</span>
+                    <span>已筹<em>{{value.raiseAmount/1000}}</em>元</span>
+                    <span>剩余<em>{{(value.collectGoalAmount-value.raiseAmount)/1000}}</em>元</span>
+                </div>
+            </div>
+        {{/each}}
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+

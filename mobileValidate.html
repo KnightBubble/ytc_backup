@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－手机验证</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/loginVerification.css" rel="stylesheet">
+</head>
+<body>
+<div class="content">
+    <p class="color-gray6">请输入手机<span id="tel" class="color-orange2 h5">&nbsp;</span>收到的6位短信验证码</p>
+    <p style="text-align: left;">验证码<input id="smsCode" type="tel" placeholder="填写6位短信验证码"></p>
+    <div class="btn">
+        <button class="bg-orange2" id="validTel">验证</button>
+    </div>
+    <div class="share">
+        <h4><span class="color-gray9">没有收到验证码,稍等<span id="leftSec">60</span>秒</span></h4>
+        <a id="reSendSms" href="javasctip:void(0);" class="color-orange2 m-top50">重新发送验证码</a>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/logic/mobileValidate.js"></script>
+<script>
+    function timeOut() {
+        var count = 60;
+        var countdown = setInterval(CountDown, 1000);
+        function CountDown() {
+            $("#reSendSms").hide();
+            $("#leftSec").val(count);
+            if (count == 0) {
+                $("#reSendSms").show();
+                clearInterval(countdown);
+            }
+            count--;
+        }
+    }
+
+    timeOut();
+
+    count = 1;
+
+    $('#reSendSms').click(function () {
+        if(++count == 3) {
+            alert("发送短信超过3次");
+        } else {
+            //发送验证码
+            //0-手机号验证 1-忘记密码 2-注册
+            sendSms(tel, userId, 0, function () {
+                timeOut();
+            });
+        }
+    })
+</script>

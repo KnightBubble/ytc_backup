@@ -1,0 +1,257 @@
+
+body{
+    padding-bottom: 1rem;
+	background-color: #f8f8f8;
+	width:100%;
+}
+img{
+	width: 100%;
+}
+.swiper-container{
+	height: 180px;
+}
+.swiper-container-horizontal>.swiper-scrollbar {
+	height: 0px;
+}
+.swiper-pagination-bullet-active{
+	background: #ff7726;
+}
+.content .banner{
+	/*padding: .1rem;*/
+	box-sizing:border-box;
+}
+.content .banner>img{ 
+	width: 100%;
+}
+.content .hd-love{
+	padding: .5rem 0 .4rem .4rem;
+	box-sizing:border-box;
+}
+.content .hd-love>p{
+	line-height: .35rem;
+	color: #a1a1a1;
+	text-indent: .1rem;
+}
+.content .shou{
+	padding:0 .1rem;
+	box-sizing:border-box;
+}
+.content .love{
+	padding: 0 .1rem;
+	box-sizing:border-box;
+}
+.content .love>div{
+	min-height: 5rem;
+	padding: 1rem 0 0 .4rem;
+	box-sizing:border-box;
+	background:#f4f4f4 url("../img/home_love.jpg") right bottom no-repeat;
+	background-size: 60%;
+}
+.content .love>div>p{
+	color: #999;
+	line-height: .35rem;
+}
+.info .hd{
+	padding: .2rem .3rem;
+	box-sizing:border-box;
+}
+.info .hd .tit{
+	height: .7rem;
+	line-height: .7rem;
+	position: relative;
+	padding-left: 1rem;
+}
+.info .hd .tit .pic{
+	height:.7rem;
+	width: .7rem;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.info .hd>ul>li{
+	width: 25%;
+	padding-right: .1rem;
+	box-sizing:border-box;
+	float: left;
+}
+.info .bd{
+	padding-left: .3rem;
+	padding-right: .4rem;
+	box-sizing:border-box;
+	min-height: 1.9rem;
+}
+.info .bd>ul>li{
+	float: left;
+	width: .5rem;
+	height: .5rem;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #fff;
+	margin-top: .1rem;
+	margin-left: -.08rem;
+}
+.info .bd>span.right{
+	line-height: .7rem;
+}
+.info .dd{
+	height: .8rem;
+	line-height: .8rem;
+	background-color: #f8f8f8;
+	padding: 0 .1rem;
+	box-sizing:border-box;
+}
+.info .dd>ul>li{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+
+.media{
+	padding: 0 .4rem;
+	box-sizing:border-box;
+	padding-bottom: .5rem;
+}
+.media>h3{ 
+	line-height: 1.2rem; 
+	height: 1.2rem; 
+	border-bottom: 1px solid #f4f4f4;
+	text-align: center;
+}
+.server{
+	padding: .4rem; 
+	box-sizing:border-box;
+	background-color: #f4f4f4;
+	overflow: hidden;
+}
+.server>div{
+	width: 50%;
+}
+.server>div:last-child{
+	border-left: 1px solid #f4f4f4;
+	box-sizing:border-box;
+	padding-left: .4rem;
+}
+.server>div>img{
+	width: 1rem;
+}
+.page-list{
+	/*margin-bottom: 60px;*/
+	background: #f8f8f8;
+}
+.page-list .list{
+	padding:12px 0 12px 12px;
+	/*height: 300px;*/
+	background: white;
+	margin-top:10px;
+}
+.title{
+	font-size: 15px;
+	color:#333333;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+span.releasePre{
+	font-size: 14px;
+	color:#aaa;
+	margin-left:5px;
+	font-weight: 100;
+}
+.detailInformation{
+    font-size: 15px;
+    color: #333333;
+    min-height: 15px;
+    max-height: 72px;
+    display: inline-block;
+    word-break: break-all;
+    margin-right: 12px;
+    overflow: hidden;
+    line-height: 25px;
+}
+.img-box{
+	padding:10px 0;
+	height: 125px;
+	width: 200%;
+	overflow: hidden;
+}
+
+.pro-imgs{
+	height: 125px;
+	width:125px;
+	float: left;
+	margin-right: 6px;
+}
+.pro-support{
+	margin: 5px 0 10px 0;
+}
+.suppor-logo-box{
+	display: inline-block;
+	width:200px;
+	overflow: hidden;
+	height: 23px;
+}
+img.support-logo{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.support-num{
+	color:#aaa;
+	font-size: 14px;
+	display: inline-block;
+	height: 20px;
+	line-height: 22px;
+	float: right;
+	margin-right: 12px;
+}
+.support-num em{
+	color:#333;
+}
+.process-box{
+	width: 80%;
+    height: 2px;
+    background: #eee;
+    border-radius: 3px;
+    display: inline-block;
+	position: relative;
+    top: -5px;
+}
+.real-process{
+	width: 0%;
+	height: 4px;
+	background: #ff7726;
+	position: relative;
+	top: -1px;
+	border-radius: 3px;
+}
+.tips-process{
+	float: right;
+	margin-right: 12px;
+}
+.details{
+	margin:10px 12px 5px 0;
+}
+.details span{
+	font-size: 14px;
+    color: #aaa;
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+	border-right: 1px solid #eeeeee;
+}
+.details span:last-child{
+	border-right:none;
+}
+.details span em{
+	color:#333;
+}
+
+
+
+
+
+
+
+

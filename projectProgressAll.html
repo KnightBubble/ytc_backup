@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－动态</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/projectDetail.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">动态－一同筹</span>
+</header>
+<div class="content">
+    <div class="dynamic m-top20 bg-white " id="progress">
+        <h4>众筹动态<em class="color-orange2" id="progressCnt">2</em></h4>
+        <div class="bd" id="nextProgress">
+            <a href="javascript:;" id="downPage_progress" class="color-gray9 m-top10"
+               style="display: block; text-align: center;padding-right: 1.2rem;">
+                ︾
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="theme-popover-mask" style="display:none;"></div>
+<div class="boxin" id="replyDiv">
+    <h6>发表评论</h6>
+    <textarea placeholder="我也说一句" id="contentReply"></textarea>
+    <input id="progId" type="hidden" value=""/>
+    <input id="projectId" type="hidden" value=""/>
+    <ul>
+        <li>
+            <a href="javascript:;" id="cancelReply">取消</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="color-orange2" id="reply">回复</a>
+        </li>
+    </ul>
+</div>
+
+<footer>
+    <ul>
+        <li>
+            <a href="#" id="index">
+                <i class="iconfont">&#xe608;</i>
+                <p>公益</p>
+            </a>
+        </li>
+        <li class="cur">
+            <a href="#" id="dongtai">
+                <i class="iconfont">&#xe607;</i>
+                <p>动态</p>
+            </a>
+        </li>
+        <li>
+            <a href="#" id="plan">
+                <i class="iconfont">&#xe625;</i>
+                <p>互助</p>
+            </a>
+        </li>
+        <li>
+            <a href="#" id="project">
+                <i class="iconfont">&#xe600;</i>
+                <p>发起</p>
+            </a>
+        </li>
+        <li>
+            <a href="#" id="mine">
+                <i class="iconfont">&#xe602;</i>
+                <p>我</p>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/logic/projectProgressAll.js"></script>
+<!--<script type="text/javascript" src="js/WeixinApi.js"></script>-->
+<!--<script type="text/javascript" src="js/wxSDK/wxJSSDK.js"></script>-->
+<!--<script type="text/javascript" src="js/logic/wxShare.js"></script>-->

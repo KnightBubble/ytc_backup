@@ -1,0 +1,43 @@
+body,html{
+    background-color: #fff;
+}
+.content{
+    padding: .2rem;
+    box-sizing: border-box;
+}
+.content>p{
+    color: #666;
+    font-size: .26rem;
+}
+
+
+.content .btn{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:.3rem;
+}
+.content .btn>button{
+    width: 100%;
+    height: .6rem;
+    line-height: .6rem;
+    border-radius: .3rem;
+    border: 0;
+    color: #fff;
+}
+.content>input{
+    height: .5rem;
+    line-height: .5rem;
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    background-color: #f8f8f8;
+    text-indent: .2rem;
+}
+.content>textarea{
+    height: 2rem;
+    line-height: .4rem;
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    background-color: #f8f8f8;
+    text-indent: .2rem;
+}

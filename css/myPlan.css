@@ -1,0 +1,8 @@
+body,html{background-color: #f4f4f4;}
+.content .con-hd{ padding:.25rem .2rem; background-color: #fff;box-sizing:border-box;}
+.content>div .con-hd{border-top: 1px solid #e5e5e5;}
+.content>div .con-hd:first-child{margin-top: .2rem; border-top: 0;}
+.content .con-hd>h4{ line-height: .5rem;}
+.content .con-hd>p{ line-height: .4rem; font-size: .22rem;}
+
+

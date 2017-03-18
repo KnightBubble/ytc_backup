@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－更新动态</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/feedback.css" rel="stylesheet">
+    <link href="css/photos.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">更新动态</span>
+</header>
+<div class="content">
+    <textarea class="m-top20" placeholder="请填写更新内容" id="instruction"></textarea>
+    <div id="imgDiv">
+        <div id="chooseDiv" class="photoDiv">
+            <a href="javascript:;" id="chooseImg">
+                <img src="img/pic-8.png" id="choosedImg"/>
+            </a>
+        </div>
+    </div>
+
+    <p style="color: #fe7927;font-size:.15rem; line-height:.15rem;">
+        请勿在更新内容中上传二维码或引导用户发微信,支付宝红包,私人账号汇款等一切信息，一经发现，将严肃处理</p>
+    <div class="btn">
+        <button class="bg-orange2" id="btnSelected">提交</button>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxJSSDK.js"></script>
+<script type="text/javascript" src="js/wxSDK/imageApi.js"></script>
+<script type="text/javascript" src="js/logic/photoUpAndDownload.js"></script>
+<script type="text/javascript" src="js/logic/projectProgressCreate.js"></script>

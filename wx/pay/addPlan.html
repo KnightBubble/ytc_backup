@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－加入计划</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/addPlan.css" rel="stylesheet">
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <!--<script type="text/javascript" src="../js/json2.js"></script>-->
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/js.js"></script>
+    <script type="text/javascript" src="../../js/getUrlParam.js"></script>
+    <script type="text/javascript" src="../../js/wxSDK/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../../js/wxSDK/wxJSSDK.js"></script>
+    <script type="text/javascript" src="../../js/wxSDK/wxLogin.js"></script>
+    <script type="text/javascript" src="../../js/logic/addPlan.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">加入大爱计划</span>
+</header>
+<div class="content">
+    <div class="con-hd">
+        <h4 class="color-orange2">填写被保障人信息</h4>
+        <p>帮家人加入时，请填写家人身份信息</p>
+        <form id="addPersonFrm">
+            <a class="color-orange2" href="javascript:;" id="addPersons"><strong class="h1">+</strong>添加更多人保障人</a>
+        </form>
+    </div>
+
+    <div class="con-list m-top70">
+        <p class="color-gray3">我的承诺被保障人身体健康，无癌症或其它重大疾病史，我同意《会员公约》和《计划条款》</p>
+        <button class="bg-orange2 color-white" id="wxCharge">微信充值<span id="totAmt"></span>元</button>
+        <p class="color-green" style="text-align: center">充值金额自动计算累计</p>
+    </div>
+    <div class="theme-popover-mask"></div>
+    <div class="popupbox">
+        <i class="iconfont">&#xe627;</i>
+        <h6 class="color-orange2 m-top10">以下信息是您获取保障的重要凭证，一旦填写将不能修改.</h6>
+        <form>
+            <span>关系：</span>
+            <select class="zhengshiW" id="relationType">
+                <option value="10">本人</option>
+                <option value="0">亲人</option>
+            </select>
+            <input id="realNm" type="text" placeholder="请输入真实姓名"/>
+            <input id="realId" type="tel" placeholder="请输入身份证号码"/>
+            <!--<input id="realMb" type="tel" placeholder="请输入手机号"/>-->
+        </form>
+        <div>
+            <button class="color-white bg-orange2 m-top30">保存信息</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

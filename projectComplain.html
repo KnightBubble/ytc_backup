@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－举报项目</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/projectAudit.css" rel="stylesheet">
+    <link href="css/photos.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">举报项目</span>
+</header>
+<div class="content">
+    <div class="bd">
+        <a href="javascript:;" class="h6">
+            <input type="text" placeholder="举报的理由" id="cause"/>
+        </a>
+        <div id="reportImgDiv">
+            <div id="chooseDiv" class="photoDiv">
+                <a href="javascript:;" id="chooseImg">
+                    <img src="img/pic-8.png" id="choosedImg"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="btn m-top50">
+        <button class="color-white bg-orange2" id="reportBtn">确认举报</button>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxJSSDK.js"></script>
+<script type="text/javascript" src="js/wxSDK/imageApi.js"></script>
+<script type="text/javascript" src="js/logic/photoUpAndDownload.js"></script>
+<script type="text/javascript" src="js/logic/projectComplain.js"></script>

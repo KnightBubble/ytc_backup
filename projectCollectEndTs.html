@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－修改项目结束时间</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/projectAudit.css" rel="stylesheet">
+    <link href="plugin/nouislider.css" rel="stylesheet">
+
+</head>
+<body class="bg-white">
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">修改时间</span>
+</header>
+<div class="content">
+    <div class="bd">
+        <h6>截止日期 <span class="color-grayc"><span id="collectEndTsStr">2016-05-20 00:10</span> 共<font
+                id="slider_value">2</font></span></h6>
+        <!--<img src="img/jingdu.png" width="456" height="44"  alt=""/>-->
+    </div>
+
+    <div style="padding-left:.2rem; box-sizing:border-box; padding-bottom:.3rem;">
+        <cite class="color-orange2"
+              style="width:.51rem;display:inline-block;text-align:right;">2天</cite>
+        <span id="basic_slider"
+              style="width:4.75rem;height:.12rem;background-color:#FF7A37;margin:0 0.1rem;top: -3px;"></span>
+        <font>30天</font>
+    </div>
+    <div class="btn m-top50">
+        <button class="color-white bg-orange2" id="saveCollectTm">保存</button>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="plugin/nouislider.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script>
+    var slider = $("#basic_slider")[0];
+    noUiSlider.create(slider, {
+        start: 2,
+        step: 1,
+        connect: "lower",
+        range: {
+            'min': 0,
+            'max': 30
+        }
+    });
+    slider.noUiSlider.set([null, 2]);
+    slider.noUiSlider.on('update', function (values, handle) {
+        $("#slider_value").text(parseInt(values) + "天");
+//        alert(UrlParm.parm("collectEndTs")+"   slider  "+parseInt(UrlParm.parm("collectEndTs")));
+        var date = new Date(parseInt(UrlParm.parm("collectEndTs")));
+        var day = date.getDate();
+        date.setDate(day + parseInt(values));
+        var collectEndTsStr = date.Format("yyyy-MM-dd HH:mm");
+        $("#collectEndTsStr").text(collectEndTsStr);
+    });
+</script>
+</html>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="plugin/nouislider.js"></script>
+<script type="text/javascript" src="js/logic/projectCollectEndTs.js"></script>

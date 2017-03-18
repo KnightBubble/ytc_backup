@@ -1,0 +1,40 @@
+.content>ul>li{
+    height: .8rem;
+    padding: .1rem .2rem;
+    box-sizing:border-box;
+    border-bottom: 1px solid #f4f4f4;
+    line-height: .6rem;
+}
+.content>ul>li>a{
+    display: block;
+    position: relative;
+    color: #333;
+}
+.content>ul>li>a>i{
+    margin-right: .2rem;
+}
+.content>ul>li:first-child{
+    position: relative;
+    padding-left: .7rem;
+}
+.content>ul>li:first-child cite{
+    position: absolute;
+    top: 0;
+    width: 5rem;
+}
+.content>ul>li:first-child cite>span{
+    position: absolute;
+    top: .16rem;
+    font-size: .24rem;
+}
+.content i.ico{
+    position: absolute;
+    left: -.55rem;
+    top: -.05rem;
+    width: .35rem;
+    height: .5rem;
+    display: inline-block;
+}
+.content i.ico>img{
+    width: 100%;
+}

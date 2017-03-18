@@ -1,0 +1,123 @@
+.content .ProjectList>li{
+	height: 1rem;
+	padding: .1rem .2rem;
+	box-sizing:border-box;
+	border-bottom: 1px solid #f4f4f4;
+}
+.content .ProjectList>li>a{
+	display: block;
+	position: relative;
+	padding-left: .8rem;
+	box-sizing:border-box;
+}
+.content .ProjectList>li>a>i{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display:inline-block;
+	width: .7rem;
+	height: .7rem;
+	line-height: .7rem;
+	text-align: center;
+	font-size: .42rem;
+}
+.content .ProjectList>li>a{
+
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	height: .7rem;
+	padding: .1rem 0;
+	box-sizing:border-box;
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	border-top: 1px solid #f4f4f4;
+}
+.footer>ul>li{
+	width: 50%;
+	float: left;
+}
+.footer>ul>li:last-child{
+	border-left: 1px solid #f4f4f4;
+	box-sizing:border-box;
+}
+.footer>ul>li>a{
+	display: block; 
+	text-align: center;
+	line-height: .5rem;
+	color: #fe7927;
+}
+
+
+/*  */
+.allProject .hd{
+	margin-left: -1px;
+	padding: .15rem 0;
+	box-sizing:border-box;
+	height: .7rem;
+	background-color: #fff;
+}
+.allProject .hd>li{
+	width: 33.33%;
+	float: left;
+	border-left: 1px solid #f4f4f4;
+	box-sizing:border-box;
+}
+.allProject .hd>li>a{
+	display: block;
+	line-height: .4rem;
+	text-align: center;
+}
+.allProject .hd>li.cur>a{
+	color: #fe7927;
+}
+.allProject .list>li{
+	border-bottom: 1px solid #f4f4f4;
+	border-top: 1px solid #f4f4f4;
+	background-color: #fff;
+	margin-bottom: .2rem;
+}
+.allProject .list{
+	padding-top: .2rem;
+}
+.allProject .list>li>a{
+	padding:.15rem .2rem;
+	display: block;
+	padding-left: 1.5rem;
+	box-sizing:border-box;
+	position: relative;
+	min-height: 1.3rem;
+}
+.allProject .list>li>a>div.pic{
+	position: absolute;
+	left: .2rem;
+	top: .15rem;
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+}
+.allProject .list>li>a>div.pic>img{
+	width: 100%;
+	height: 100%;
+}
+.allProject .list>li>a>div.txt>h5{
+	line-height: .6rem;
+}
+.allProject .list>li>a>div.txt>p>cite{
+	margin-left: .2rem;
+	padding-left: .2rem;
+	border-left: 1px solid #f4f4f4;
+	box-sizing:border-box;
+}
+.allProject .list .more:after{
+	right: .2rem;
+}
+
+
+
+
+
+
+

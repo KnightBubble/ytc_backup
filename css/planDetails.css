@@ -1,0 +1,47 @@
+body,html{ background-color: #f4f4f4; padding-bottom: .7rem;}
+.content>div>img{ width: 100%;}
+.content .hd>ul{ padding: .3rem 0;}
+.content .hd>ul>li{ width: 50%; float: left; text-align: center;}
+.content .hd>ul>li:last-child{border-left: 1px solid #e5e5e5; box-sizing:border-box;}
+.content .hd>ul>li>p{ color: #999; margin-top: .1rem;}
+.content .hd>ul>li>span{ font-size: .26rem;}
+.content .con{ padding: .2rem; box-sizing:border-box;}
+.content .con>h5{ padding-bottom: .15rem;}
+.content .con>p{ line-height: .4rem; font-size: .2rem;}
+.rule{ padding: .1rem .2rem; box-sizing:border-box;}
+.rule>h5{ line-height: .5rem;}
+.rule>ul>li{ line-height: .7rem; border-bottom: 1px solid #e5e5e5;}
+.rule>ul>li:last-child{ border-bottom: 0;}
+.rule>ul>li>a{ display: block; position: relative; padding-left: 1.5rem; color: #333;}
+.rule>ul>li>a>span{ width: 1.5rem; display: inline-block;position: absolute; left: 0; top: 0;}
+.rule>ul>li .boxin{padding: .15rem; width: 97%; display: none; position: relative; margin-bottom: .2rem; line-height: .4rem; font-size: .22rem; box-sizing:border-box; border-radius: 5px; background-color: #f4f4f4;}
+.rule>ul>li .boxin table{border: 1px solid #ddd;}
+.rule>ul>li .boxin table tr>td:first-child{ width: 2rem;}
+tr,td{border: 1px solid #ddd; text-indent: .1rem;}
+.rule>ul>li .boxin>span{ position: absolute; top:-.08rem; width: 0;height: 0; border-left: .1rem  solid transparent;border-right: .1rem  solid transparent; border-bottom: .1rem  solid #f4f4f4;}
+/* 安全保障*/
+.anger{padding: .1rem .2rem; box-sizing:border-box;}
+.anger>h5{ line-height: .6rem;}
+.anger>ul>li{ position: relative; padding-left: .8rem; height: .6rem; line-height: .6rem;}
+.anger>ul>li>span{ position: absolute; width: .4rem; height: .4rem; top:0; left: .1rem;}
+.anger>ul>li>span>img{ width: 100%;}
+/*常见问题*/
+.wenti{padding: .2rem; box-sizing:border-box;}
+.wenti>h5{line-height: .5rem;}
+.wenti>ul>li{line-height: .7rem; border-bottom: 1px solid #ddd;}
+.wenti>ul>li:last-child{ border-bottom: 0;}
+.wenti>ul>li .boxin{padding: .15rem; width: 97%; display: none; position: relative; margin-bottom: .2rem; line-height: .4rem; font-size: .22rem; box-sizing:border-box; border-radius: 5px; background-color: #f4f4f4;}
+.wenti>ul>li .boxin table{border: 1px solid #ddd;}
+.wenti>ul>li .boxin table tr>td:first-child{ width: 2rem;}
+tr,td{border: 1px solid #ddd; text-indent: .1rem;}
+.wenti>ul>li .boxin>span{ position: absolute; top:-.08rem; width: 0;height: 0; border-left: .1rem  solid transparent;border-right: .1rem  solid transparent; border-bottom: .1rem  solid #f4f4f4;}
+
+
+
+.yue{padding: .2rem; box-sizing:border-box; padding-bottom: .5rem;}
+.yue>h5{line-height: .5rem;}
+.footer>button{  position: fixed;bottom: 0; width: 100%; min-width: 320px; max-width: 640px; height: .7rem; line-height: .7rem; border: 0;}
+
+
+
+

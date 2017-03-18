@@ -1,0 +1,52 @@
+.content>ul{
+	margin-left: -1px;
+	border-bottom: 1px solid #f4f4f4;
+	padding: .2rem 0;
+	height: .4rem;
+	line-height: .4rem;
+}
+.content>ul>li{
+	float: left;
+	width: 50%;
+	border-left: 1px solid #f4f4f4;
+	box-sizing:border-box;
+}
+.content>ul>li>a{
+	display: block;
+	text-align: center;
+}
+.content>div{
+	padding: .1rem  .2rem;
+	box-sizing:border-box;
+}
+.content>ol>li{
+	height: .7rem;
+	line-height: .7rem;
+	position: relative;
+	padding-left: 1.5rem;
+}
+.content>ol>li>span{
+	position: absolute;
+	left: .2rem;
+	top: 0;
+}
+.content>ol>li>select,.content>ol>li>input{
+	background-color: transparent;
+	border:0;
+	width: 100%;
+}
+.btn{
+	width: 5.5rem;
+	margin: .5rem auto;
+}
+.btn>button{
+	border-radius: .3rem;
+	border: 0;
+	height: .6rem;
+	line-height: .6rem;
+	width: 100%;
+	font-size: .28rem;
+	margin-top: .8rem;
+}
+
+

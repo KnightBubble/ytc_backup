@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－验证回调</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/getUrlParam.js"></script>
+
+</head>
+<body>
+<script type="application/javascript">
+    $(document).ready(function () {
+        $.postJSON("/wx/saveUser",
+                {
+                    "code": UrlParm.parm("code"),
+                    "reUrl": UrlParm.parm("reUrl")
+                }, function (data) {
+                    $(document.location).attr("href", data.reUrl + "&uid=" + data.user.userId);
+                }
+        );
+    });
+</script>
+</body>
+</html>

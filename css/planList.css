@@ -1,0 +1,10 @@
+.content img{ width: 100%;}
+.content .list{ padding: 0 .1rem; box-sizing:border-box; position: relative; }
+.content .list>div{ background-color: #f4f4f4; padding-left: 1.8rem;}
+.content .list .pto{ position: absolute; top: 0; left: .1rem; width: 1.8rem; height: 2rem;}
+.content .list .pto>img{ height: 100%;}
+.content .list .txt{ padding: .15rem .1rem; box-sizing:border-box; padding-right: 0;}
+.content .list .txt>p{ font-size: .2rem; color: #666;}
+.content .list .txt>button{ padding: .15rem .4rem; font-size: .26rem; border-radius: 3px; border:0;}
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－查看支持记录</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/viewLog.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">查看支持记录</span>
+</header>
+<div class="content">
+    <div class="viewLog" id="collectsDiv">
+        <ul class="hd clearfix">
+            <li>
+                <a href="javascript:;">
+                    <cite class="color-orange2"><span id="subscribeCnt">0</span>次</cite>
+                    <p>支持次数</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <cite class="color-orange2" id="supportAmount">0元</cite>
+                    <p>支持金额</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <cite class="color-orange2" id="collectCnt">0次</cite>
+                    <p>关注数</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="list" id="scbscribes">
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/logic/projectSubscribeAll.js"></script>

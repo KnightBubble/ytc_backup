@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－查看凭证</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/lookVoucher.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">查看凭证</span>
+</header>
+<div class="content">
+    <div class="con-hd">
+        <h4 class="color-orange2"><span id="planName">人人公益互助大病计划</span></h4>
+        <p>保障状态：<span id="statusTip"></span></p>
+        <p>互助金：最高<span id="limitAmount">0</span>万元</p>
+    </div>
+    <div class="con-bd m-top20">
+        <ul>
+            <li>
+                <span>累计互助次数：<cite class="color-orange2"><span id="leijiCnt">0</span></cite>次</span>
+                <span>累计互助金额：<cite class="color-orange2"><span id="leijiAmt">0</span></cite>元</span>
+            </li>
+            <li>
+                姓名：<span id="realName">&nbsp;</span>
+            </li>
+            <li>
+                身份证号：<span id="idCardNumber">&nbsp;</span><i class="iconfont">&#xe629;</i>
+            </li>
+            <li>
+                加入日期：<span id="addDateStr">&nbsp;</span>
+            </li>
+            <li>
+                账户余额：<span id="balance">0</span>元
+            </li>
+            <li>
+                保障状态：<span id="statusName">&nbsp;</span>
+            </li>
+        </ul>
+    </div>
+    <div class="con-list">
+        <ul>
+            <!--<li>
+                <a href="javascript:;">充值</a>
+                <span class="right">></span>
+            </li>-->
+            <li id="helpMemberList">
+                <a href="javascript:;">查看已帮助会员</a>
+                <span class="right">></span>
+            </li>
+            <li>
+                <a href="javascript:;">查看互助条款</a>
+                <span class="right">></span>
+            </li>
+            <li>
+                <a href="javascript:;">拔打互助申请电话</a>
+                <span class="color-gray3 right">400-0999-999</span>
+            </li>
+        </ul>
+        <p class="color-green">您的互助尚在观察期，暂时不能申请互助</p>
+        <button id="wxPay" class="bg-orange2 color-white">微信充值<!--<span id="preDeposit">9</span>元--></button>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/logic/myPlan.js"></script>
+<script type="text/javascript" src="js/logic/lookVoucher.js"></script>

@@ -1,0 +1,27 @@
+body,html{background-color: #f5f5f5;}
+.content .con-hd{ padding:.25rem .2rem; background-color: #fff;box-sizing:border-box;}
+.content .con-hd>h4{ line-height: .5rem;}
+.content .con-hd>p{ line-height: .4rem; font-size: .22rem;}
+
+.content .con-bd{padding: .1rem .2rem; box-sizing:border-box; background-color: #fff;}
+.content .con-bd>ul>li{ line-height: .5rem; height: .5rem; font-size: .24rem;}
+.content .con-bd>ul>li>i{ margin-left: .5rem;font-size: .36rem;vertical-align: middle; position: absolute; right: .2em;}
+.content .con-bd>ul>li:first-child>span{width: 50%; float: left; text-align: left;}
+
+.content .con-list{background-color: #fff; margin-top: .2rem;}
+.content .con-list>ul>li{ height: .6rem; line-height: .6rem; border-bottom: 1px solid #e5e5e5; padding: 0 .2rem; box-sizing:border-box;}
+.content .con-list>ul>li>span{ color: #999;}
+.content .con-list>ul>li>a{ color: #333;}
+.content .con-list>ul>li:last-child{border-bottom: 0;}
+.content .con-list>p{ text-indent: .2rem; font-size: .2rem; margin-top: .1rem;}
+.content .con-list>button{ width: 80%; margin: .5rem auto; border-radius: .3rem; font-size: .26rem; border:0; display: block; height: .6rem; line-height: .6rem;}
+
+.content .con-hd>button{ width: 80%; margin: 2.4rem auto .15rem; border-radius: .3rem; font-size: .26rem; border:0; display: block; height: .6rem; line-height: .6rem;}
+.center1{ text-align:center;}
+
+
+
+
+
+
+

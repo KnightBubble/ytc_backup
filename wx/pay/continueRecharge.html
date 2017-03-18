@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－充值</title>
+    <!--将两个content写上搜索引擎的内容-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/continueRecharge.css" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">我的互助计划</span>
+</header>
+<div class="content">
+    <div class="con-hd">
+        <h4 class="color-orange2"><span id="planName">人人公益互助大病计划</span></h4>
+        <p>姓名：<span id="realName">&nbsp;</span></p>
+        <p>加入日期：<span id="addDateStr">&nbsp;</span></p>
+        <p>账户余额：<span class="color-orange2"><span id="balance">0</span>元</span><cite class="color-orange2"
+                                                                                     style="margin-left: .2rem;"><span
+                id="statusName">&nbsp;</span></cite></p>
+    </div>
+    <div class="con-bd">
+        <h4 class="color-orange2">充值金额</h4>
+        <p>根据测算互助金额约需每年100元，建议您充值30元以上</p>
+        <div class="box">
+            <ul id="amountUl" class="clearfix">
+                <li>
+                    <a href="javascript:;">9元</a>
+                </li>
+                <li class="cur">
+                    <a href="javascript:;">30元</a>
+                </li>
+                <li>
+                    <a href="javascript:;">100元</a>
+                </li>
+            </ul>
+            <div>其它：<input id="otherAmount" type="tel"/>元</div>
+        </div>
+    </div>
+    <div class="con-list">
+        <button id="planRePay" class="bg-orange2 color-white">微信充值(<span id="amount"></span>元)</button>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/js.js"></script>
+<script type="text/javascript" src="../../js/getUrlParam.js"></script>
+<script type="text/javascript" src="../../js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="../../js/wxSDK/wxJSSDK.js"></script>
+<script type="text/javascript" src="../../js/wxSDK/wxLogin.js"></script>
+<script type="text/javascript" src="../../js/logic/continueRecharge.js"></script>

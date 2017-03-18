@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－关注项目列表</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+</head>
+<body class="bg-gray">
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1">关注项目</span>
+</header>
+<div class="content">
+    <div id="allProject" class="allProject">
+        <ul id="allProjectTitle" class="hd clearfix">
+            <li id="successed">
+                <a href="javascript:;">
+                    已成功
+                </a>
+            </li>
+            <li id="going" class="cur">
+                <a href="javascript:;">
+                    进行中
+                </a>
+            </li>
+            <li id="losed">
+                <a href="javascript:;">
+                    已失败
+                </a>
+            </li>
+        </ul>
+        <ul id="allProjectContent" class="list">
+            <li>
+                <a href="javascript:;" class="more">
+                    <div class="pic">
+                        <img src="img/home_listtu.jpg"/>
+                    </div>
+                    <div class="txt">
+                        <h5>苹果手机求支持</h5>
+                        <p>3天前<cite class="color-orange2">剩余5天</cite></p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxLogin.js"></script>
+<script type="text/javascript" src="js/logic/allProjectsCollect.js"></script>

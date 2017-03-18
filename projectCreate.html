@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>一同筹－发起项目</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/projectEdit.css" rel="stylesheet">
+    <link href="css/photos.css" rel="stylesheet">
+    <link href="plugin/nouislider.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="plugin/nouislider.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.go(-1);">
+            <i class="iconfont color-white">&#xe609;</i>
+        </a>
+    </div>
+    <span class="nav-header h1"><img src="img/hd-list1.png" style="height:100%;width: 2.3rem;" alt=""/></span>
+    <div class="nav-wrap-right">
+        <a href="javascript:void(0);" id="nextStepID">
+            <i class="iconfont color-white">下一步</i>
+        </a>
+    </div>
+</header>
+<div class="content">
+    <div class="info">
+        <p class="color-gray9">一同筹的微爱通道属于个人救助，不违反此慈善法.</p>
+    </div>
+    <div class="bg-gray jiuzu">
+        大病救助<cite class="color-orange2 right">筹款说明</cite>
+    </div>
+    <div class="hd">
+        <ul>
+            <li>
+                <span>筹款资金</span>
+                <input type="text" placeholder="填写筹款资金" id="fund"/>
+                <cite>元</cite>
+            </li>
+            <li>
+                <span>筹款用途</span>
+                <textarea placeholder="填写筹款用途" id="purpose"></textarea>
+                <!--<input type="text" placeholder="填写筹款用途" id="purpose"/>-->
+                <!--<cite>元</cite>-->
+            </li>
+            <li>
+                <span>截止日期</span>
+                <em style="font-size:.2rem;"><span id="collectEndTsStr">2016-05-20  14:35</span> 共<font
+                        class="color-orange2" id="slider_value">5</font></em>
+            </li>
+        </ul>
+        <div style="padding-left:.2rem; box-sizing:border-box; padding-bottom:.3rem;">
+            <cite id="slider_value" class="color-orange2"
+                  style="width:.51rem;display:inline-block;text-align:right;">2天</cite>
+            <span id="basic_slider"
+                  style="width:4.75rem;height:.12rem;background-color:#FF7A37;margin:0 0.1rem;top: -3px;"></span>
+            <font>30天</font>
+        </div>
+    </div>
+    <div class="bg-gray" style="height:.2rem;"></div>
+    <div class="bd">
+        <input type="text" placeholder="填写筹款项目标题" id="title"/>
+        <textarea placeholder="建议详细描述受助人的基本情况：如家庭背景、经济状况、患病经历等。" id="contents"></textarea>
+        <p class="color-graya m-top10" style="font-size:.2rem;">项目内容如项目图片禁止透露任何<cite
+                class="color-orange2">联系方式</cite>和<cite class="color-orange2">银行卡</cite>等收款信息，包括但不限于手机号码、座机号码、微信号、支付宝账号、银行卡号等。违以上以规定，项目验证和提现申请均不予通过。
+        </p>
+        <div id="projectImgs">
+            <div id="chooseDiv" class="photoDiv">
+                <a href="javascript:;" id="chooseImg">
+                    <img src="img/pic-8.png" id="choosedImg"/>
+                </a>
+            </div>
+        </div>
+
+        <p class="m-top10 color-graya">微爱通道发起的医疗救助项目，建议上传患者冶疗中的照片、患者病前后生活照对比、医院诊断照片，提高项目可信度。</p>
+    </div>
+    <div class="btn" id="btnSelected">
+        <button class="bg-orange2 color-white" id="submit">发布项目</button>
+        <!--<p class="color-gray9"><i class="iconfont color-orange2" id="agree">&#xe60e;</i>已阅读并同意<cite
+                class="color-orange2">《项目发起条款》</cite></p>-->
+    </div>
+    <!--蓝色部分样式-->
+    <!--<div class="btn">
+        <button class="bg-blue color-white">发布项目</button>
+        <p class="color-gray9"><i class="iconfont color-blue">&#xe60e;</i>已阅读并同意<cite class="color-orange2">《轻松筹项目发起条款》</cite></p>
+    </div>-->
+</div>
+
+
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+    $(".content .bd>a").click(function () {
+        $(".theme-popover-mask").show();
+        $(".boxin1").show();
+    })
+    $(".boxin1 .btn").click(function () {
+        $(".theme-popover-mask").hide();
+        $(".boxin1").hide();
+    })
+    var slider = $("#basic_slider")[0];
+    noUiSlider.create(slider, {
+        start: 2,
+        step: 1,
+        connect: "lower",
+        range: {
+            'min': 0,
+            'max': 30
+        }
+    });
+    slider.noUiSlider.set([null, 2]);
+    slider.noUiSlider.on('update', function (values, handle) {
+        $("#slider_value").text(parseInt(values) + "天");
+        var date = new Date();
+        var day = date.getDate();
+        date.setDate(day + parseInt(values));
+        var collectEndTsStr = date.Format("yyyy-MM-dd HH:mm");
+        $("#collectEndTsStr").text(collectEndTsStr);
+    });
+</script>
+</html>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/getUrlParam.js"></script>
+<script type="text/javascript" src="js/wxSDK/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxLogin.js"></script>
+<script type="text/javascript" src="js/wxSDK/wxJSSDK.js"></script>
+<script type="text/javascript" src="js/wxSDK/imageApi.js"></script>
+<script type="text/javascript" src="js/logic/photoUpAndDownload.js"></script>
+<script type="text/javascript" src="js/logic/projectCreate.js"></script>
